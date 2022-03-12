@@ -1,0 +1,21 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "9626ae1c-9849-400a-9232-9b02bd31ffdd": {
+      "ProjectGuid": "9626ae1c-9849-400a-9232-9b02bd31ffdd",
+      "DisplayName": "NtFreX.Precompiler",
+      "ColorIndex": 0
+    },
+    "e1698e8a-fba8-4724-a5c1-7e0a0ba3b3d2": {
+      "ProjectGuid": "e1698e8a-fba8-4724-a5c1-7e0a0ba3b3d2",
+      "DisplayName": "NtFreX.Precompiler.Tests",
+      "ColorIndex": 1
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Miscellaneous Files",
+      "ColorIndex": -1
+    }
+  },
+  "NextColorIndex": 2
+}

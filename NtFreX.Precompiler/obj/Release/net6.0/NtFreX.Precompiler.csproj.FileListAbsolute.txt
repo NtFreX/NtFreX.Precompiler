@@ -1,0 +1,12 @@
+D:\projects\NtFreX.Precompiler\NtFreX.Precompiler\bin\Release\net6.0\NtFreX.Precompiler.deps.json
+D:\projects\NtFreX.Precompiler\NtFreX.Precompiler\bin\Release\net6.0\NtFreX.Precompiler.dll
+D:\projects\NtFreX.Precompiler\NtFreX.Precompiler\bin\Release\net6.0\NtFreX.Precompiler.pdb
+D:\projects\NtFreX.Precompiler\NtFreX.Precompiler\obj\Release\net6.0\NtFreX.Precompiler.csproj.AssemblyReference.cache
+D:\projects\NtFreX.Precompiler\NtFreX.Precompiler\obj\Release\net6.0\NtFreX.Precompiler.GeneratedMSBuildEditorConfig.editorconfig
+D:\projects\NtFreX.Precompiler\NtFreX.Precompiler\obj\Release\net6.0\NtFreX.Precompiler.AssemblyInfoInputs.cache
+D:\projects\NtFreX.Precompiler\NtFreX.Precompiler\obj\Release\net6.0\NtFreX.Precompiler.AssemblyInfo.cs
+D:\projects\NtFreX.Precompiler\NtFreX.Precompiler\obj\Release\net6.0\NtFreX.Precompiler.csproj.CoreCompileInputs.cache
+D:\projects\NtFreX.Precompiler\NtFreX.Precompiler\obj\Release\net6.0\NtFreX.Precompiler.dll
+D:\projects\NtFreX.Precompiler\NtFreX.Precompiler\obj\Release\net6.0\refint\NtFreX.Precompiler.dll
+D:\projects\NtFreX.Precompiler\NtFreX.Precompiler\obj\Release\net6.0\NtFreX.Precompiler.pdb
+D:\projects\NtFreX.Precompiler\NtFreX.Precompiler\obj\Release\net6.0\ref\NtFreX.Precompiler.dll
