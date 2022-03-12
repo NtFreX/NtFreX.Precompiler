@@ -17,10 +17,10 @@ public class PathNormalizationTests
     [InlineData(@"/home/projects/", "./test.xml", @"/home/projects/test.xml")]
     [InlineData(@"/home/projects.x", "./test.xml", @"/home/test.xml")]
     [InlineData(@"/home/projects", "./test.xml", @"/home/test.xml")]
-    [InlineData(@"/home/projects\", "../test.xml", @"/home/test.xml")]
-    [InlineData(@"/home/projects\", "../test/test.xml", @"/home/test/test.xml")]
-    [InlineData(@"/home/projects\path\", "../test/test.xml", @"/home/projects/test/test.xml")]
-    [InlineData(@"/home/projects\path\", "../test/../test.xml", @"/home/projects/test.xml")]
+    [InlineData(@"/home/projects/", "../test.xml", @"/home/test.xml")]
+    [InlineData(@"/home/projects/", "../test/test.xml", @"/home/test/test.xml")]
+    [InlineData(@"/home/projects/path/", "../test/test.xml", @"/home/projects/test/test.xml")]
+    [InlineData(@"/home/projects/path/", "../test/../test.xml", @"/home/projects/test.xml")]
 #endif
     public void CanNormalizePath(string root, string input, string expected)
     {

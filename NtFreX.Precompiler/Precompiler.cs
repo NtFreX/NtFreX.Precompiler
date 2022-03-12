@@ -182,15 +182,14 @@ namespace NtFreX.Precompiler
         internal string Precompile(string text, string filePath, IncludeContext includeContext)
         {
             var tokens = new List<SyntaxToken>();
-            var lineNumber = 1;
-            foreach (var line in text.Split(Environment.NewLine))
+            var lines = text.Split(Environment.NewLine);
+            for (var lineIndex = 0; lineIndex < lines.Length; lineIndex++)
             {
 
-                var textTokens = line.Split(' ', StringSplitOptions.RemoveEmptyEntries);
-                tokens.AddRange(ParseTokens(lineNumber, textTokens, filePath));
-                tokens.Add(new SyntaxToken(SyntaxTokenType.Text, Environment.NewLine, lineNumber, filePath));
-
-                lineNumber++;
+                var textTokens = lines[lineIndex].Split(' ', StringSplitOptions.RemoveEmptyEntries);
+                tokens.AddRange(ParseTokens(lineIndex + 1, textTokens, filePath));
+                if(lineIndex + 1 < lines.Length)
+                    tokens.Add(new SyntaxToken(SyntaxTokenType.Text, Environment.NewLine, lineIndex + 1, filePath));
             }
 
             var syntaxTree = ParseSyntaxTree(tokens, includeContext);
