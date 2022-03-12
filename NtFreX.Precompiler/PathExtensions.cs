@@ -9,7 +9,10 @@ public static class PathExtensions
         if (!Path.IsPathRooted(relativePath) && !string.IsNullOrEmpty(folder))
             rootedPath = Path.Combine(folder, relativePath);
 
-        //TODO: to uppercase if case insensitive file system (windows)
+
+#if IS_WINDOWS
+        rootedPath = rootedPath.ToUpper();
+#endif
         return Path.GetFullPath(rootedPath);
     }
 }

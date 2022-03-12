@@ -1,0 +1,15 @@
+<Project>
+  <PropertyGroup>
+    <PackageLicenseUrl>https://raw.githubusercontent.com/NtFreX/NtFreX.Precompiler/master/LICENSE</PackageLicenseUrl>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <Copyright>Copyright 2022 (c) Frederik Traber. All rights reserved.</Copyright>
+    <Authors>Frederik Traber</Authors>
+    <RepositoryUrl>https://github.com/NtFreX/NtFreX.Precompiler</RepositoryUrl>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <DefineConstants Condition="'$(OS)' == 'Windows_NT'">IS_WINDOWS</DefineConstants>
+    <DefineConstants Condition="'$([System.Runtime.InteropServices.RuntimeInformation]::IsOSPlatform($([System.Runtime.InteropServices.OSPlatform]::OSX)))' == 'true'">IS_OSX</DefineConstants>
+    <DefineConstants Condition="'$([System.Runtime.InteropServices.RuntimeInformation]::IsOSPlatform($([System.Runtime.InteropServices.OSPlatform]::Linux)))' == 'true'">IS_LINUX</DefineConstants>
+  </PropertyGroup>
+</Project>
