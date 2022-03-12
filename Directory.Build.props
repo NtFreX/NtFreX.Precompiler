@@ -4,6 +4,7 @@
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
     <Copyright>Copyright 2022 (c) Frederik Traber. All rights reserved.</Copyright>
     <Authors>Frederik Traber</Authors>
+    <Version>PACKAGEVERSION</Version>
     <PackageDescription>Generic precompiler for .NET</PackageDescription>
     <RepositoryUrl>https://github.com/NtFreX/NtFreX.Precompiler</RepositoryUrl>
   </PropertyGroup>
