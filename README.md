@@ -1,4 +1,5 @@
-# NtFreX.Precompiler
+# NtFreX.Precompiler [![NuGet version (NtFreX.Precompiler)](https://img.shields.io/nuget/v/NtFreX.Precompiler.svg)](https://www.nuget.org/packages/NtFreX.Precompiler/)
+
 A generic precompiler for .NET
 
 ## Supported syntax:
