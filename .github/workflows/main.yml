@@ -26,5 +26,7 @@ jobs:
       run: dotnet nuget add source --username USERNAME --password ${{ secrets.GITHUB_TOKEN }} --store-password-in-clear-text --name github "https://nuget.pkg.github.com/NtFreX/index.json"
     - name: Nuget Pack
       run: dotnet pack --configuration Release --no-build --output ./package -p:PackageVersion=0.0.${{github.run_number}}
-    - name: Nuget Publish 
+    - name: Nuget Publish github
       run: dotnet nuget push "./package/NtFreX.Precompiler.0.0.${{github.run_number}}.nupkg" --source "github"
+    - name: Nuget Publish
+      run: dotnet nuget push "./package/NtFreX.Precompiler.0.0.${{github.run_number}}.nupkg" --api-key ${{ secrets.NUGET_API_KEY }} --source https://api.nuget.org/v3/index.json
