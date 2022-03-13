@@ -26,7 +26,7 @@ jobs:
       with:
         path: ./${{env.PACKAGE}}/bin/Release/${{env.TARGET}}
     - name: Nuget Auth
-      run: dotnet nuget add source --password ${{ secrets.GITHUB_TOKEN }} --store-password-in-clear-text --name github "https://nuget.pkg.github.com/${{env.GITHUB_REPOSITORY_OWNER}}/index.json"
+      run: dotnet nuget add source --username USERNAME --password ${{ secrets.GITHUB_TOKEN }} --store-password-in-clear-text --name github "https://nuget.pkg.github.com/${{env.GITHUB_REPOSITORY_OWNER}}/index.json"
     - name: Nuget Pack
       run: dotnet pack --configuration Release --no-build --output ./package -p:PackageVersion=${{env.VERSION}}
     - name: Nuget Publish github
