@@ -6,8 +6,13 @@
     <Authors>Frederik Traber</Authors>
     <PackageDescription>Generic precompiler for .NET</PackageDescription>
     <RepositoryUrl>https://github.com/NtFreX/NtFreX.Precompiler</RepositoryUrl>
+	<PackageReadmeFile>README.md</PackageReadmeFile>
   </PropertyGroup>
 
+  <ItemGroup>
+	  <None Include="$(ProjectDir)\..\README.md" Pack="true" PackagePath="\"/>
+  </ItemGroup>
+  
   <PropertyGroup>
     <DefineConstants Condition="'$(OS)' == 'Windows_NT'">IS_WINDOWS</DefineConstants>
     <DefineConstants Condition="'$([System.Runtime.InteropServices.RuntimeInformation]::IsOSPlatform($([System.Runtime.InteropServices.OSPlatform]::OSX)))' == 'true'">IS_OSX</DefineConstants>
