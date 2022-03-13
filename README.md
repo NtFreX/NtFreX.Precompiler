@@ -1,4 +1,4 @@
-# NtFreX.Precompiler [![NuGet version (NtFreX.Precompiler)](https://img.shields.io/nuget/v/NtFreX.Precompiler.svg)](https://www.nuget.org/packages/NtFreX.Precompiler/)
+# NtFreX.Precompiler [![Build/Test/Release](https://github.com/NtFreX/NtFreX.Precompiler/actions/workflows/main.yml/badge.svg)](https://github.com/NtFreX/NtFreX.Precompiler/actions/workflows/main.yml) [![NuGet version (NtFreX.Precompiler)](https://img.shields.io/nuget/v/NtFreX.Precompiler.svg)](https://www.nuget.org/packages/NtFreX.Precompiler/)
 
 A generic precompiler for .NET
 
